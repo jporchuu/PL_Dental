@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="billAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.BillController">
+   <children>
+      <JFXButton ellipsisString="" layoutX="74.0" layoutY="603.0" onAction="#back" prefHeight="69.0" prefWidth="62.0" ripplerFill="#0095ff">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="49.0" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text layoutX="632.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Name">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="616.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Service Rendered">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="611.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Treatment">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text fx:id="givenName" layoutX="419.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="542.0000000000001">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="serviceRendered" layoutX="419.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="542.0000000000002">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateOfTreatment" layoutX="418.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="542.0000000000002">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="610.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time of Treatment">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeOfTreatment" layoutX="419.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="542.0000000000002">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="633.0" layoutY="565.0" onAction="#savePDF" prefHeight="56.0" prefWidth="111.0" ripplerFill="#0082ca" style="-fx-background-color: FFFFFF;" text="SAVE RECEIPT">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <Text layoutX="633.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL PRICE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="totalPriceString" layoutX="419.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="542.0000000000002">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="551.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BILLED AT:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeAndDate" layoutX="651.0" layoutY="671.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="262.0000000000002">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="37.0" fitWidth="62.0" layoutX="1204.0" layoutY="669.0">
+         <image>
+            <Image url="@../assets/Portu-Len_Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

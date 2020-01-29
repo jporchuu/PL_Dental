@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="RegisterAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Register.RegisterController">
+   <children>
+      <JFXButton ellipsisString="" layoutX="74.0" layoutY="603.0" onAction="#back" prefHeight="69.0" prefWidth="62.0" ripplerFill="#0095ff">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="49.0" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ChoiceBox fx:id="ageChoice" layoutX="405.0" layoutY="536.0" prefWidth="150.0" />
+      <JFXButton buttonType="RAISED" layoutX="538.0" layoutY="616.0" onAction="#getPatientData" prefHeight="44.0" prefWidth="164.0" ripplerFill="#0082ca" style="-fx-background-color: #FFFFFF;" text="ENTER DATA">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="230.0" fitWidth="230.0" layoutX="514.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/patient.png" />
+         </image>
+      </ImageView>
+      <JFXRadioButton fx:id="maleRadio" layoutX="440.0" layoutY="441.0" selected="true" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderRadio" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="femaleRadio" layoutX="440.0" layoutY="468.0" text="Female" toggleGroup="$genderRadio" />
+      <TextField fx:id="patientName" layoutX="406.0" layoutY="366.0" promptText="Enter Full Name" />
+      <Text layoutX="427.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Given Patient Name" />
+      <Text layoutX="440.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Gender" />
+      <Text layoutX="432.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Age Group" />
+      <JFXCheckBox fx:id="dentalCaries" layoutX="636.0" layoutY="366.0" onAction="#dentalCariesSelected" text="Dental Caries" />
+      <Text layoutX="678.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Present Disease" />
+      <JFXCheckBox fx:id="gingiPerio" layoutX="637.0" layoutY="412.0" onAction="#gingiPerioSelected" text="Gingivitis/Periodontitis" />
+      <JFXCheckBox fx:id="oralDebris" layoutX="637.0" layoutY="462.0" onAction="#oralDebrisSelected" text="Oral Debris" />
+      <JFXCheckBox fx:id="calculus" layoutX="637.0" layoutY="511.0" text="Calculus" />
+      <JFXCheckBox fx:id="dentoFacialAnomaly" layoutX="637.0" layoutY="562.0" text="Dento-facial Anomaly" />
+      <Spinner fx:id="cariesAmt" disable="true" editable="true" layoutX="814.0" layoutY="360.0" prefHeight="25.0" prefWidth="62.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Spinner>
+      <Spinner fx:id="debrisAmt" disable="true" editable="true" layoutX="814.0" layoutY="458.0" prefHeight="25.0" prefWidth="62.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Spinner>
+      <Spinner fx:id="gingiPerioAmt" disable="true" editable="true" layoutX="814.0" layoutY="408.0" prefHeight="25.0" prefWidth="62.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Spinner>
+      <ImageView fitHeight="37.0" fitWidth="62.0" layoutX="1204.0" layoutY="670.0">
+         <image>
+            <Image url="@../assets/Portu-Len_Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

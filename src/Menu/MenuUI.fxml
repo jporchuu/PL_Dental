@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MenuAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.MenuController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="481.0" layoutY="237.0" onAction="#registerNewPatient" prefHeight="70.0" prefWidth="318.0" ripplerFill="#0082ca" style="-fx-background-color: FFFFFF;" text="Register New Patient">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="481.0" layoutY="595.0" onAction="#billing" prefHeight="70.0" prefWidth="318.0" ripplerFill="#0082ca" style="-fx-background-color: FFFFFF;" text="Billing">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="481.0" layoutY="417.0" onAction="#scheduleAppointment" prefHeight="70.0" prefWidth="318.0" ripplerFill="#0082ca" style="-fx-background-color: FFFFFF;" text="Schedule Appointment">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <Text layoutX="51.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dental Health Status, Schedule, and Service Report Generator" textAlignment="CENTER" wrappingWidth="1178.13671875">
+         <font>
+            <Font name="Century Gothic Bold" size="36.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="481.0" layoutY="328.0" onAction="#searchEditPatient" prefHeight="70.0" prefWidth="318.0" ripplerFill="#0082ca" style="-fx-background-color: FFFFFF;" text="Search/Edit/Delete Patient">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="481.0" layoutY="506.0" onAction="#searchSchedule" prefHeight="70.0" prefWidth="318.0" ripplerFill="#0082ca" style="-fx-background-color: FFFFFF;" text="Search Schedule">
+         <font>
+            <Font size="18.0" />
+         </font></JFXButton>
+      <ImageView fx:id="plLOGO" fitHeight="77.0" fitWidth="143.0" layoutX="569.0" layoutY="55.0" opacity="0.0">
+         <image>
+            <Image url="@../assets/Portu-Len_Logo.png" />
+         </image>
+         <effect>
+            <DropShadow height="15.0" radius="7.0" width="15.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
